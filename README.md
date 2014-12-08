@@ -20,8 +20,16 @@ And finally, there's the people that search the food that can use the applicatio
 All these users are volunteers, so to make this network a geat place, there's also some social features that let them feel they are a big family. These features are ranking of users with a lists of top donators, top suppliers and top collectors displayed on the application, the possibility to communicate in the application (not yet implemented) and so on ...
 
 ## Screenshots
-
-Comming soon
+### Guest view
+![Guest view](http://urkk8f9b9f2a.rbenhammane.koding.io/screenshots/Guest.png "Guest view")
+### Donator view
+![Donator view](http://urkk8f9b9f2a.rbenhammane.koding.io/screenshots/Donator.png "Donator view")
+### Collector view
+![Collector view](http://urkk8f9b9f2a.rbenhammane.koding.io/screenshots/Collector.png "Collector view")
+### Collector view - notif
+![Collector view](http://urkk8f9b9f2a.rbenhammane.koding.io/screenshots/Collector_notif.png "Collector view")
+### Supplier view
+![Supplier view](http://urkk8f9b9f2a.rbenhammane.koding.io/screenshots/Supplier.png "Supplier view")
 
 ## APIs used
 
