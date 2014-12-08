@@ -11,6 +11,14 @@
 |
 */
 
+Route::get( '/auth/facebook', 'AuthController@facebook' );
+
+Route::resource( '/api/login', 'LoginController@store');
+
+Route::resource( '/api/supplier', 'CommonController@suppliers');
+
+Route::resource( '/api/donator', 'CommonController@donators');
+
 Route::any( '{all}', function( $uri ) {
-	return View::make( 'layouts.master' );
+	return View::make('home');
 })->where( 'all', '.*' );

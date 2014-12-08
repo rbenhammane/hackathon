@@ -1,0 +1,20 @@
+<form name="loginForm" data-ng-controller="LoginController" data-ng-submit="login(credentials)" novalidate>
+    <div class="modal-header">
+        <h3 class="modal-title">Login</h3>
+    </div>
+    <div class="modal-body">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input class="form-control" type="text" id="username" data-ng-model="credentials.username">
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input class="form-control" type="password" id="password" data-ng-model="credentials.password">
+            </div>
+        <!--<a href="/auth/facebook" class="btn btn-block btn-facebook btn-social"><i class="fa fa-facebook"></i>Sign in with Facebook</a>-->
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="submit">Login</button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+    </div>
+</form>

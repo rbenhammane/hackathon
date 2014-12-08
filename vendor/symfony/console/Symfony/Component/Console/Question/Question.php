@@ -10,7 +10,6 @@
  */
 
 namespace Symfony\Component\Console\Question;
-use Doctrine\Common\Proxy\Exception\InvalidArgumentException;
 
 /**
  * Represents a Question.
@@ -73,7 +72,7 @@ class Question
     /**
      * Sets whether the user response must be hidden or not.
      *
-     * @param bool    $hidden
+     * @param bool $hidden
      *
      * @return Question The current instance
      *
@@ -103,7 +102,7 @@ class Question
     /**
      * Sets whether to fallback on non-hidden question if the response can not be hidden.
      *
-     * @param bool    $fallback
+     * @param bool $fallback
      *
      * @return Question The current instance
      */
@@ -180,11 +179,11 @@ class Question
      *
      * Null means an unlimited number of attempts.
      *
-     * @param null|int     $attempts
+     * @param null|int $attempts
      *
      * @return Question The current instance
      *
-     * @throws InvalidArgumentException In case the number of attempts is invalid.
+     * @throws \InvalidArgumentException In case the number of attempts is invalid.
      */
     public function setMaxAttempts($attempts)
     {

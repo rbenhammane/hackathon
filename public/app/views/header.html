@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="branding col-md-6">
+        <span>Do not waste food</span><span>Donate it to others</span>
+        <img data-ng-src="resources/images/logo.png" alt="">
+    </div>
+    <div class="col-md-6" data-ng-controller="HeaderController">
+        <div class="input-group roles">
+            <select class="form-control" name="role" id="role" data-ng-model="role" data-ng-change="go(role)">
+                <option value="guest">guest</option>
+                <option value="donator">donator</option>
+                <option value="collector">collector</option>
+                <option value="supplier">supplier</option>
+            </select>
+        </div>
+		<ul class="nav navbar-nav" data-ng-switch data-on="role">
+			<!--<li data-ng-switch-when="donator">-->
+			<!--	<a href="" data-ng-click="showLogin()">LOGIN</a>-->
+			<!--</li>-->
+			
+			<li data-ng-switch-when="donator" data-ng-click="showModal('stats')">
+				<a href="" data-ng-click="">Stats</a>
+			</li>
+			
+			<li data-ng-switch-when="donator" data-ng-click="showModal('donateFood')">
+				<a href="" data-ng-click="">Donate Food</a>
+			</li>
+			
+			<li data-ng-switch-when="collector" data-ng-click="showModal('stats')">
+				<a href="" data-ng-click="">Stats</a>
+			</li>
+			
+			<li data-ng-switch-when="supplier" data-ng-click="showModal('othersRequests')">
+				<a href="" data-ng-click="">Suppliers Requests</a>
+			</li>
+			<li data-ng-switch-when="supplier" data-ng-click="showModal('ownRequests')">
+				<a href="" data-ng-click="">Propose Supply</a>
+			</li>
+			<li data-ng-switch-when="supplier" data-ng-click="showModal('ownRequests')">
+				<a href="" data-ng-click="">Own Requests</a>
+			</li>
+			<li data-ng-switch-when="supplier" data-ng-click="showModal('requestSupply')">
+				<a href="" data-ng-click="">Request Supply</a>
+			</li>
+		</ul>
+    </div>
+</div>

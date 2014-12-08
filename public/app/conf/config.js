@@ -9,6 +9,7 @@ var config = {
 	 	controller: '.js',
 	 	view: '.html'
 	 }, 
-	 controllerOutfix: 'Controller'
-
-}
+	 controllerOutfix: 'Controller',
+	 googleKey: 'AIzaSyBfn40Fu6QzlUaOl_Vo0uVm8NZHueX_B0U'
+	 
+};
