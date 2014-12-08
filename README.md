@@ -21,3 +21,7 @@ Google Maps
 Google Geocode
 
 (Facebook + Google OAUTH)
+
+## Public materials used
+
+https://github.com/bluewebtech/angularjs-laravel-boilerplate
